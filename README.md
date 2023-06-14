@@ -2,6 +2,8 @@
 **1. Introduction:**
 - This little document aims to explain how the project is setup, as well as how to run it.
 - Due to tight schedule so I know that there are quite a lot of points needs to be improved.
+- I try to be as flexible as much as possible in the framework by allowing people to choose
+their style: either come along with classic approach, or go with BDD approach.
 
 **2. Pre-requisities:**
 - Java JDK 17 installed and configured properly
@@ -45,9 +47,11 @@ https://drive.google.com/file/d/11n0VItZ5mJcErhEzL-qKEJtEaL0UAmZY/view?usp=shari
 **3.2.2. CucumberRunner**
 - Will update sooner.
 
-**5. Improvement:**
+**5. Improvements:**
 - Rework on pom.xml. Some dependencies are not used but I don't have enough of times for clean up.
 - Support for Selenium Grid
 - Rework on CucumberHooks. Now afterScenario step always check if WebDriver instance is existed
 - Update the NinjaVanClient. It is still verbose now.
 - Dockernize the framework to run it on CI/CD tool.
+- Define groups for non-BDD test cases.
+- Have better report. ReportPortal is one great report tool that keep run history, and elapsed time for each run
