@@ -8,7 +8,8 @@ their style: either come along with classic approach, or go with BDD approach.
 **2. Pre-requisities:**
 - Java JDK 17 installed and configured properly
 - IDE. IntelliJ is recommended
-- Maven installed and configured properly
+- Maven installed and configured properly, but it is optional since I already provide
+Maven wrapper. Instead of using mvn command, we can issue command: ./mvnw
 
 **3. How to run the tests:**
 
