@@ -52,7 +52,20 @@ https://drive.google.com/file/d/1TvEgV9GiVc1eKReKO-8MN2rc1we6JEiX/view?usp=shari
 https://drive.google.com/file/d/11n0VItZ5mJcErhEzL-qKEJtEaL0UAmZY/view?usp=sharing
 
 **3.2.2. CucumberRunner**
-- Update later
+- Update pom.xml file like this one:
+Before:
+
+https://drive.google.com/file/d/1fzHGULFNFMdl4pCvmRJFY50Ai7A9UrOr/view?usp=sharing
+
+After:
+
+https://drive.google.com/file/d/1QKlA4BDnl67LZoeaG2XTe20UDYJ3PJZZ/view?usp=sharing
+
+- Run: _mvn clean install -DskipTests=true_ to install dependencies
+- Run: _mvn clean verify -Dtags="ui" -Dspring.profiles.active=dev -Dparallel=false_ to start the test with tag @ui
+
+https://drive.google.com/file/d/1bOXiEbzrgIcDrCEUE-u-skDaRVIk4s1V/view?usp=sharing
+https://drive.google.com/file/d/1OG3FdDY8XfomDTBmTovqNToRZoYYjSfu/view?usp=sharing
 
 **5. Improvements:**
 - Rework on pom.xml. Some dependencies are not used but I don't have enough of times for clean up.
