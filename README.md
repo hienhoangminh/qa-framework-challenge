@@ -52,16 +52,7 @@ https://drive.google.com/file/d/1TvEgV9GiVc1eKReKO-8MN2rc1we6JEiX/view?usp=shari
 https://drive.google.com/file/d/11n0VItZ5mJcErhEzL-qKEJtEaL0UAmZY/view?usp=sharing
 
 **3.2.2. CucumberRunner**
-- First we need to comment out the configuration for Maven surefire plugin
-  
-https://drive.google.com/file/d/1_d2WPJjZmkS3c7K4eO-vf8CaiVt_aD8Q/view?usp=sharing
-- Then we need to install dependencies: _mvn clean install -DskipTests=true_
-- Finally run the command: _mvn test -Dspring.profiles.active=dev_
-
-https://drive.google.com/file/d/1EHIAU75a6esSv02f6I6OLbsfu-txoYlT/view?usp=sharing
-https://drive.google.com/file/d/1HGxCGt8WMrakBl6rv-9Z2aDRvHpDk0am/view?usp=sharing
-- To run the test with specific tag, run: _mvn test -Dcucumber.filter.tags="@ui"_ but
-doesn't work when I try.
+- Update later
 
 **5. Improvements:**
 - Rework on pom.xml. Some dependencies are not used but I don't have enough of times for clean up.
