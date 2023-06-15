@@ -17,8 +17,10 @@ Maven wrapper. Instead of using mvn command, we can issue command: ./mvnw
 
 **3.1.1. CucumberRunner**
 - To run BDD tests, right click on the CucumberRunner > Run
+
 https://drive.google.com/file/d/1sRCP_fOiTWLrzD_USnpkyTHJdaR8yVPO/view?usp=sharing
 - In VM options, update command to -ea -Dspring.profiles.active=dev
+  
 https://drive.google.com/file/d/1II7-1waiQT103w0iHT7MmuaUSuos1eER/view?usp=sharing
 - Finally, click on Apply then OK
 - Now we can right-click on CucumberRunner > Run CucumberRunner
@@ -26,11 +28,14 @@ https://drive.google.com/file/d/1II7-1waiQT103w0iHT7MmuaUSuos1eER/view?usp=shari
 **3.1.2. TestNG XML file**
 
 - To run classic test, right click on the testng.xml file > Modify Run configuration
+
 https://drive.google.com/file/d/1RUJeEiVvRT2NcsnmbEs7s6P2fRkPxh7t/view?usp=sharing
-- In VM options, update command to -ea -Dspring.profiles.active=dev
+- In VM options, update command to _-ea -Dspring.profiles.active=dev_
+
 https://drive.google.com/file/d/1EWKutqIrftdI3KiNRR67gQm7tCPK4wCt/view?usp=sharing
 - Finally, click on Apply then OK
 - Now we can right-click on testng.xml file > Run testng.xml file:
+
 https://drive.google.com/file/d/1el5Vsik0uTuQ0WA5bjXCdK-ifC1eS_IU/view?usp=sharing
 
 
@@ -40,7 +45,8 @@ https://drive.google.com/file/d/1el5Vsik0uTuQ0WA5bjXCdK-ifC1eS_IU/view?usp=shari
 
 - First clone this repo from GitHub
 - Next, cd to qa-framework-challenge repo
-- Run following command line: mvn clean install -Dspring.profiles.active=dev
+- Run following command line: _mvn clean install -Dspring.profiles.active=dev_
+
 https://drive.google.com/file/d/1IGpjaLpGsgzZrua0MZfqpxiWh8msdswY/view?usp=sharing
 https://drive.google.com/file/d/1TvEgV9GiVc1eKReKO-8MN2rc1we6JEiX/view?usp=sharing
 https://drive.google.com/file/d/11n0VItZ5mJcErhEzL-qKEJtEaL0UAmZY/view?usp=sharing
@@ -49,13 +55,12 @@ https://drive.google.com/file/d/11n0VItZ5mJcErhEzL-qKEJtEaL0UAmZY/view?usp=shari
 - First we need to comment out the configuration for Maven surefire plugin
   
 https://drive.google.com/file/d/1_d2WPJjZmkS3c7K4eO-vf8CaiVt_aD8Q/view?usp=sharing
-- Then we need to install dependencies: mvn clean install -DskipTests=true
-- Finally run the command: mvn test -Dspring.profiles.active=dev
+- Then we need to install dependencies: _mvn clean install -DskipTests=true_
+- Finally run the command: _mvn test -Dspring.profiles.active=dev_
 
 https://drive.google.com/file/d/1EHIAU75a6esSv02f6I6OLbsfu-txoYlT/view?usp=sharing
 https://drive.google.com/file/d/1HGxCGt8WMrakBl6rv-9Z2aDRvHpDk0am/view?usp=sharing
-- To run the test with specific tag, run:
-mvn test -Dcucumber.filter.tags="@ui" but
+- To run the test with specific tag, run: _mvn test -Dcucumber.filter.tags="@ui"_ but
 doesn't work when I try.
 
 **5. Improvements:**
