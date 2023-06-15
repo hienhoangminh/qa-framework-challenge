@@ -11,7 +11,6 @@ import com.rocktester.automation.qaframework.httpclient.NinjaVanClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.testng.annotations.Test;
 
@@ -19,7 +18,7 @@ import java.util.Objects;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class NonBDDCreateOrderTest extends SpringBaseTestNGTest {
+public class NonBDDCreateOrderTest extends SpringBaseTestNGTest{
 
     @Autowired
     private NinjaVanClient client;
