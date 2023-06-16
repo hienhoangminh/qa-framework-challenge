@@ -5,6 +5,7 @@ import com.rocktester.automation.qaframework.core.exception.AutomationException;
 import com.rocktester.automation.qaframework.core.service.WindowSwitchService;
 import com.rocktester.automation.qaframework.page.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.testng.annotations.Test;
 
 public class NonBDDPrintAirwayBillTest extends SpringBaseTestNGTest {
@@ -27,11 +28,16 @@ public class NonBDDPrintAirwayBillTest extends SpringBaseTestNGTest {
     @Autowired
     private WindowSwitchService switchService;
 
+    @Value("${email}")
+    private String email;
+
+    @Value("${password}")
+    private String password;
+
     @Test
     public void checkDetail() throws AutomationException {
         this.loginPage.goTo();
-        this.loginPage.isAt();
-        this.loginPage.enterEmailInput("challenge2@ninjavan.co").enterPasswordInput("Ninjavan1234").clickOnLoginButton();
+        this.loginPage.enterEmailInput(email).enterPasswordInput(password).clickOnLoginButton();
         this.landingPage.isAt();
         this.landingPage.clickOnGotItButtonIfNeeds().minimizeChatWidget().clickOnTrackingMenu();
         this.trackingPage.isAt();
